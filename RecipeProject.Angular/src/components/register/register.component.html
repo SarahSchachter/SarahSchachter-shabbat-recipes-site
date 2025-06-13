@@ -1,0 +1,26 @@
+<!-- <p>register works!</p>
+
+<input [(ngModel)]="new_user.fname" placeholder=" שם םרטי"/>
+<p>{{new_user.fname}}</p>
+<input [(ngModel)]="new_user.lname" placeholder=" שם משפחה"/>
+<input [(ngModel)]="new_user.email" placeholder="הכנס כתובת מייל"/>
+<input [(ngModel)]="new_user.password" placeholder="הכנס סיסמה "/>
+<button (click)="check()"> הרשם</button> -->
+
+<div class="register-container">
+  <h2>הרשמה לאתר מתכוני שבת</h2>
+
+  <label>שם פרטי</label>
+  <input [(ngModel)]="new_user.fname" placeholder="הכנסי שם פרטי" />
+
+  <label>שם משפחה</label>
+  <input [(ngModel)]="new_user.lname" placeholder="הכנסי שם משפחה" />
+
+  <label>אימייל</label>
+  <input [(ngModel)]="new_user.email" type="email" placeholder="הכנסי כתובת מייל" />
+
+  <label>סיסמה</label>
+  <input [(ngModel)]="new_user.password" type="password" placeholder="הכנסי סיסמה" />
+
+  <button (click)="check()">הרשמה</button>
+</div>

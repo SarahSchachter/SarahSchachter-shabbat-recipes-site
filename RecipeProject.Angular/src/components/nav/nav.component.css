@@ -1,0 +1,28 @@
+.main-nav {
+  background-color: #f9f4ef; /* צבע רקע חם ועדין */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center; /* מרכז את הקישורים אופקית */
+  gap: 35px; /* רווח בין הקישורים */
+  font-family: 'Varela Round', sans-serif;
+  direction: rtl; /* כיוון עברי */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #b85c38;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav a:hover {
+  background-color: #b85c38;
+  color: #fff;
+  cursor: pointer;
+}

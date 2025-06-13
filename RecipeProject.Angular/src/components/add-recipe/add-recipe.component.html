@@ -1,0 +1,95 @@
+<!-- <p class="page-title">הוספת מתכון חדש</p>
+
+<div class="form-container">
+  <input [(ngModel)]="new_recipe.name" placeholder="הכנס שם מתכון" class="input-field" />
+  <input [(ngModel)]="new_recipe.descripsion" placeholder="תיאור המתכון" class="input-field" />
+  <input [(ngModel)]="new_recipe.pic" placeholder="קישור לתמונה" class="input-field" />
+  <input [(ngModel)]="new_recipe.level" placeholder="רמה" class="input-field" />
+  <input [(ngModel)]="new_recipe.duration" placeholder="זמן הכנה" class="input-field" />
+  <input [(ngModel)]="new_recipe.amount" placeholder="כמות סועדים" class="input-field" />
+  <textarea [(ngModel)]="new_recipe.instructions" placeholder="הוראות הכנה" class="textarea-field"></textarea>
+
+  <p class="instructions-preview">{{ new_recipe.instructions }}</p>
+
+  <button (click)="addRecipe()" class="btn btn-primary add-btn">הוסף מתכון</button>
+</div>
+
+<hr />
+
+<div class="ingredients-section">
+  <h3>רכיבים</h3>
+
+  <div *ngFor="let i of arr_ingredient" class="ingredient-row">
+    <label class="checkbox-label">
+      <input
+        type="checkbox"
+        [value]="i.id"
+        (change)="onCheckboxChange(i)"
+      />
+      <span>{{ i.name }}</span>
+    </label>
+
+    <input
+      *ngIf="dictionery[i.id] !== undefined"
+      type="text"
+      placeholder="הכנס כמות"
+      [(ngModel)]="dictionery[i.id]"
+      class="quantity-input"
+    />
+  </div>
+
+  <button (click)="logDictionery()" class="btn btn-secondary check-btn">בדוק מילון</button>
+</div>
+
+<div class="ingredient-input-container">
+  <input [(ngModel)]="new_ingredient" placeholder="רכיב חדש" type="text" />
+  <button (click)="addIngredient()">הוסף</button>
+</div> -->
+<p class="page-title">הוספת מתכון חדש</p>
+
+<div class="form-container">
+  <input [(ngModel)]="new_recipe.name" placeholder="הכנס שם מתכון" class="input-field" />
+  <input [(ngModel)]="new_recipe.descripsion" placeholder="תיאור המתכון" class="input-field" />
+  <input [(ngModel)]="new_recipe.pic" placeholder="קישור לתמונה" class="input-field" />
+  <input [(ngModel)]="new_recipe.level" placeholder="רמה" class="input-field" />
+  <input [(ngModel)]="new_recipe.duration" placeholder="זמן הכנה" class="input-field" />
+  <input [(ngModel)]="new_recipe.amount" placeholder="כמות סועדים" class="input-field" />
+  <textarea [(ngModel)]="new_recipe.instructions" placeholder="הוראות הכנה" class="textarea-field"></textarea>
+
+  <p class="instructions-preview">{{ new_recipe.instructions }}</p>
+
+  <button (click)="addRecipe()" class="btn btn-primary add-btn">הוסף מתכון</button>
+</div>
+
+<hr />
+
+<div class="ingredients-section">
+  <h3>רכיבים</h3>
+
+  <div *ngFor="let i of arr_ingredient" class="ingredient-row">
+    <label class="checkbox-label">
+      <input
+        type="checkbox"
+        [value]="i.id"
+        (change)="onCheckboxChange(i)"
+      />
+      <span>{{ i.name }}</span>
+    </label>
+
+    <input
+      *ngIf="dictionery[i.id] !== undefined"
+      type="text"
+      placeholder="הכנס כמות"
+      [(ngModel)]="dictionery[i.id]"
+      class="quantity-input"
+    />
+  </div>
+
+  <button (click)="logDictionery()" class="btn btn-secondary check-btn">בדוק מילון</button>
+
+  <!-- הוספת רכיב חדש -->
+  <div class="add-ingredient-row">
+    <input [(ngModel)]="new_ingredient" type="text" placeholder="הוסיפי רכיב חדש" class="input-field ingredient-input" />
+    <button (click)="addIngredient()" class="btn btn-primary">הוספה</button>
+  </div>
+</div>

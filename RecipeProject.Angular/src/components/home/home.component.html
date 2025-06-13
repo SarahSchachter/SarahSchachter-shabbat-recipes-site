@@ -1,0 +1,30 @@
+<!-- <p>home works!</p>
+
+<section class="recipes-grid">
+    @for (r of getArr(); track $index) {
+    <div class="recipe-card">
+        <h3>{{ r.name }}</h3>
+        <p>רמה: {{ r.level }}</p>
+ 
+         <img [src]="getImages(r.pic)" alt="">
+         {{r.pic}}
+        <button (click)="moreDetails(r.id)">ניסוי</button>
+    </div>
+    }
+</section> -->
+
+<div class="home-container">
+  <h2>מתכונים לשבת</h2>
+
+  <section class="recipes-grid">
+    @for (r of getArr(); track $index) {
+      <div class="recipe-card">
+        <img [src]="getImages(r.pic)" alt="{{ r.name }}" />
+        <h3>{{ r.name }}</h3>
+        <!-- <p class="description">{{ r.description }}</p> -->
+        <p>רמה: {{ r.level }}</p>
+        <button (click)="moreDetails(r.id)">לפרטים</button>
+      </div>
+    }
+  </section>
+</div>

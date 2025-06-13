@@ -1,0 +1,25 @@
+<h2 class="recipe-title">📋 פרטי מתכון</h2>
+
+<div class="recipe-card">
+  <img [src]="getImages(new_recipe.pic)" alt="{{ new_recipe.name }}" />
+  <h3>{{ new_recipe.name }}</h3>
+  <p><strong>תיאור:</strong> {{ new_recipe.descripsion }}</p>
+  <p><strong>רמה:</strong> {{ new_recipe.level }}</p>
+  <p><strong>זמן הכנה:</strong> {{ new_recipe.duration }}</p>
+  <p><strong>כמות מנות:</strong> {{ new_recipe.amount }}</p>
+  <p><strong>הוראות הכנה:</strong> {{ new_recipe.instructions | removeSpaceBeforeComma }}</p>
+  <p><strong>מספר משתמש:</strong> {{ new_recipe.userId }}</p>
+</div>
+
+<h3>רכיבים</h3>
+
+@if (all_ingredient.length > 0) {
+  <ul class="ingredient-list">
+    @for ( i of all_ingredient; track i.id) {
+      <p>{{ i.name }}</p>
+      <!-- <li>{{ i.amount}}</li> -->
+    }
+  </ul>
+} @else {
+  <p>לא נמצאו רכיבים למתכון זה.</p>
+}

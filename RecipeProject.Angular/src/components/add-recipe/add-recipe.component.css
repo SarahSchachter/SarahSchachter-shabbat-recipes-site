@@ -1,0 +1,154 @@
+*{
+    direction: rtl;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #5d4037;
+  margin-bottom: 24px;
+  font-family: 'Assistant', sans-serif;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: #fff8e1;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-field, .textarea-field {
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'Assistant', sans-serif;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus, .textarea-field:focus {
+  outline: none;
+  border-color: #f9a825; /* צהוב חרדל */
+  box-shadow: 0 0 5px #f9a825;
+}
+
+.textarea-field {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.instructions-preview {
+  font-size: 14px;
+  font-style: italic;
+  color: #6d4c41;
+  margin-top: -8px;
+  margin-bottom: 12px;
+  white-space: pre-wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Assistant', sans-serif;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #f9a825;
+  color: #3e2723;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  background-color: #fbc02d;
+}
+
+.btn-secondary {
+  background-color: #a1887f;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #8d6e63;
+}
+
+.add-btn {
+  margin-top: 10px;
+  align-self: center;
+  width: 150px;
+}
+
+.ingredients-section {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff3e0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  font-family: 'Assistant', sans-serif;
+}
+
+.ingredients-section h3 {
+  text-align: center;
+  color: #5d4037;
+  margin-bottom: 16px;
+}
+
+.ingredient-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #4e342e;
+}
+
+.quantity-input {
+  width: 100px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+
+.quantity-input:focus {
+  outline: none;
+  border-color: #f9a825;
+  box-shadow: 0 0 5px #f9a825;
+}
+
+.check-btn {
+  display: block;
+  margin: 20px auto 0;
+  width: 140px;
+}
+.add-ingredient-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.ingredient-input {
+  flex: 1;
+  max-width: 300px;
+}

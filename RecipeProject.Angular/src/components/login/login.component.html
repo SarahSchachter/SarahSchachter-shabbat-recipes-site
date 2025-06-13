@@ -1,0 +1,23 @@
+<!-- <p>login works!</p>
+<p>מייל</p>
+<input [(ngModel)]="email" placeholder="הכנס כתובת מייל"/>
+<p>סיסמה</p>
+<input [(ngModel)]="password" placeholder="הכנס סיסמה "/>
+{{password}}
+<button (click)="checkUser()">התחבר</button> -->
+
+<div class="login-container">
+  <h2>ברוך הבא לאתר מתכוני שבת!</h2>
+
+  <label for="email">כתובת מייל</label>
+  <input id="email" [(ngModel)]="email" placeholder="הכנס כתובת מייל" type="email" />
+
+  <label for="password">סיסמה</label>
+  <input id="password" [(ngModel)]="password" placeholder="הכנס סיסמה" type="password" />
+
+  <button (click)="checkUser()">התחבר</button>
+<img class="login-image" src="/shabbos-table.webp"/>
+</div>
+
+
+
